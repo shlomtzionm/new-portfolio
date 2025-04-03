@@ -1,0 +1,16 @@
+.open {
+  width: 100vw;
+  height: 90vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left:  8%;
+}
+
+.skill {
+  position: absolute;
+  opacity: 0;
+  font-size: 3em;
+  scale: .2;
+}

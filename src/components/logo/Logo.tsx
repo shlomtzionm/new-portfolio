@@ -1,14 +1,11 @@
 import { JSX } from "react";
-import "../logo/logo.css";
+import "./logo.css";
 
 function Logo(): JSX.Element {
 
   return (
     <div className="logo">
-      {/* <h1 id="name">
-        shlo<span>m</span>tzion
-      </h1> */}
-      <h1 id="name">
+      <h1>
         <span>s</span>
         <span>h</span>
         <span>l</span>

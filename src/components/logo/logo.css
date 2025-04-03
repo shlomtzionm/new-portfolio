@@ -1,47 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Boldonse&family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Just+Another+Hand&family=Montserrat:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Boldonse&family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Just+Another+Hand&family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 .logo {
-  font-size: 2em;
-  position: relative;
-  font-family: "Boldonse";
-  color: black;
 }
 
 
 
-#name {
-  color: #22222278;
-  padding: .5em .3em;
-}
-
-/* #name span {
-    position: relative;
-    margin-right:0 8px;
-} */
-
-/* #name span:before {
-  content: "m";
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 3px;
-  left: 3px;
-  color: rgb(112, 70, 34);
-  z-index: -1;
-} */
-
-/* #name span:after {
-    content: "m";
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: -1px;
-    left: -1px;
-    color: rgba(8, 16, 32, 0.183);
-    z-index: -1;
-  } */
-
-
-
- .logo span:nth-child(1){
-
- } 

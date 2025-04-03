@@ -1,16 +1,31 @@
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  width: 100%;
- 
+
+.home {
+ overflow-x: hidden;
+ overflow-y: auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+
 }
 
-body {
-  display: flex;
-  justify-content: center;
-align-content: flex-start;
-  height: 100vh;
-  background-color: #5b5b5b2b;
 
+
+.logo {
+text-align: left;
+margin-left: 40px;
+  width: 100%;
+  height: 15vh;
+}
+
+.open {
+  height: 90vh;
+  margin-left: 20%;
+
+}
+
+.next{
+  width: 300px;
+  height: 150vh;
+  background-color: red;
 }
