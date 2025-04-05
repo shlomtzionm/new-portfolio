@@ -35,8 +35,8 @@ function Open(): JSX.Element {
         scrub: true}              
     
     }
-    );
-
+    )
+  
 
   
     return () => {

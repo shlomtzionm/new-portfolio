@@ -3,36 +3,35 @@ import "./logo.css";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-// Register ScrollTrigger plugin
 gsap.registerPlugin(ScrollTrigger);
 
 function Logo(): JSX.Element {
   useEffect(() => {
+    gsap.registerPlugin(ScrollTrigger);
+
     const tl = gsap.timeline({
+      defaults: { duration: 2 },
       scrollTrigger: {
         trigger: ".textShadow",
-        start: "top 50%",
-        end: "bottom 20%",
-        scrub: true
-      }
+        start: "top 20%",
+        end: "bottom 50%",
+        scrub: true,
+        pin:true,
+        markers:true
+      },
     });
-
 
     tl.to(".textShadow", {
       textShadow: "3px 3px 0 #ffdac0",
-      duration: 0.5,
     })
       .to(".textShadow", {
         textShadow: "3px 3px 0 #ffdac0,6px 6px 0 #ffa666",
-        duration: 0.5,
       })
       .to(".textShadow", {
         textShadow: "3px 3px 0 #ffdac0,6px 6px 0 #ffa666,9px 9px 0 #e37e32",
-        duration: 0.5,
       })
       .to(".textShadow", {
-        textShadow: "3px 3px 0 #ffdac0,6px 6px 0 #ffa666,9px 9px 0 #e37e32,12px 12px 0 #b56900",
-        duration: 0.5,
+        textShadow: "3px 3px 0 #ffdac0,6px 6px 0 #ffa666,9px 9px 0 #e37e32,12px 12px 0 black",
       });
   }, []);
 

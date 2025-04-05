@@ -1,10 +1,10 @@
-import { JSX } from "react";
+import { JSX, useEffect } from "react";
 import Logo from "../logo/Logo";
 import "./home.css";
-import Menu from "../menu/Menu";
 import Open from "../open/Open";
-
 function Home(): JSX.Element {
+
+
   return (
     <div className="home">
  <section className="logo">
