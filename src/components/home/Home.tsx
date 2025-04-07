@@ -1,22 +1,24 @@
 import { JSX, useEffect } from "react";
-import Logo from "../logo/Logo";
 import "./home.css";
-import Open from "../open/Open";
+import Open from "../footer/Footer";
+import Name from "../name/Name";
+import Footer from "../footer/Footer";
 function Home(): JSX.Element {
 
 
   return (
     <div className="home">
- <section className="logo">
- <Logo />
+ <section className="name">
+ <Name />
  </section>
-<section className="open">
-        <Open />
+ <section className="name">
+ <Name />
+ </section>
+<section className="footer">
+        <Footer />
 </section>
 
-<section className="next">
 
-</section>
    
     </div>
   );

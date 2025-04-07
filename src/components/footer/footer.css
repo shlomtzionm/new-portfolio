@@ -1,0 +1,19 @@
+
+.footer {
+  display: flex;
+align-items: center;
+  background-color: white;
+ 
+font-size: 1.1em;
+flex-wrap: nowrap;
+overflow: hidden;
+position: fixed;
+bottom: 0;
+}
+
+.skillContainer{
+display: flex;
+gap: 2rem;
+white-space: nowrap;
+will-change: transform;
+}

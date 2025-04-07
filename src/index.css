@@ -21,8 +21,7 @@ code {
 }
 
 body {
-  background-color: #E4E0E1;
-  color:#493628;
+  background-color: #eaeaea;
   font-family: "Boldonse";
 }
 
@@ -34,17 +33,17 @@ html::-webkit-scrollbar {
 }
 
 html::-webkit-scrollbar-track {
-  background: transparent;
+  background: #c3cfb86a;
 
 }
 
 html::-webkit-scrollbar-thumb {
-  background: #706D54;
+  background: #1c2513;
   border-radius: 4px;
 }
 
 html::-webkit-scrollbar-thumb:hover {
-  background: #B5C18E;
+  background: #000000;
 }
 
 html, body{
