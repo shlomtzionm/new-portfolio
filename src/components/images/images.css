@@ -1,0 +1,26 @@
+.images {
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+    z-index: 1000000;
+  }
+  
+  .imgContainer {
+    display: flex;
+    width: 100vw;
+justify-content: flex-end;
+z-index: 1000;
+}
+  
+  .imgContainer img {
+    height: 100px;
+    flex-shrink: 0;
+    display: block;
+    z-index: 10;
+
+  }
+  
+  @media (min-width: 700px) {
+    .imgContainer img {
+        height: 180px;
+      }}

@@ -8,14 +8,28 @@
 }
 
 .name {
-  width: 90vh;
+  width: 40vh;
 }
 
 .footer {
   height: 10vh;
   width: 100vw;
   z-index: 100;
-  
 }
 
 
+.welcome{
+height: 100vh;
+width: 100vw;
+margin-left:.5em ;
+}
+
+/* .header{
+  position: relative;
+  z-index: -1000000;
+} */
+/* 
+.images{
+  position: relative;
+  z-index: 1000;
+} */

@@ -49,3 +49,9 @@ html::-webkit-scrollbar-thumb:hover {
 html, body{
   overflow-x: hidden;
 }
+
+@media (max-width: 700px) {
+  html {
+    font-size: 10px;
+  }
+}

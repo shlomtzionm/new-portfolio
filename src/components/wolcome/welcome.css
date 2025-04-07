@@ -1,0 +1,14 @@
+@font-face {
+    font-family: "Supremely Luxurious Demo";
+    src: url('../../assets/fonts/SupremelyLuxuriousDemoReg-3zBJX.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+.welcome{
+    font-family: "Supremely Luxurious Demo";
+    font-size: 70px;
+color: black;
+z-index: 1;
+width: 70%;
+font-weight: 600;
+}

@@ -1,0 +1,51 @@
+.headerC {
+  background-color: black;
+margin: 16px ;
+border-radius: 50px;
+color: white;
+flex-direction: column;
+position: relative;
+z-index: -1000;
+height: 10vh;
+}
+
+
+.bars{
+  color: white;
+  font-size: 2em;
+margin: 24px;
+}
+.list{
+  display: flex;
+justify-content: space-between;
+align-items: center;
+margin: 24px;
+}
+
+ul{
+display: flex;
+gap: 24px;
+}
+
+li{
+  list-style: none;
+ 
+
+}
+
+
+
+/* Mobile-first styles (default) */
+.headerC {
+  width: fit-content;
+  height: fit-content;
+}
+
+/* Styles for tablet and above */
+@media (min-width: 700px) {
+  .headerC {
+    width:90vw;
+    height: 10vh;
+  }
+}
+
