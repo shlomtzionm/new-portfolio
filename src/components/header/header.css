@@ -4,6 +4,7 @@ margin: 16px ;
 border-radius: 50px;
 color: white;
 flex-direction: column;
+display: flex;
 position: relative;
 z-index: -1000;
 height: 10vh;

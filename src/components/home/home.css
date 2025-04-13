@@ -4,12 +4,11 @@
   align-items: center;
   flex-direction: column;
   padding-bottom: 10vh;
+  position: relative;
  
 }
 
-.name {
-  width: 40vh;
-}
+
 
 .footer {
   height: 10vh;
@@ -19,17 +18,18 @@
 
 
 .welcome{
-height: 100vh;
+height: 50vh;
 width: 100vw;
 margin-left:.5em ;
 }
 
-/* .header{
-  position: relative;
-  z-index: -1000000;
-} */
-/* 
-.images{
-  position: relative;
-  z-index: 1000;
-} */
+
+.ball {
+  width: 300px;
+  height: 300px;
+  position: fixed;
+  bottom: 0px;
+  right: 0;
+  z-index: 10000; /* Ensure the ball is on top of other content */
+  pointer-events: none; /* Allow interactions with elements underneath */
+}

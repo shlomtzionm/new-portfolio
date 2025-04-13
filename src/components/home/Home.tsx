@@ -4,8 +4,8 @@ import Name from "../name/Name";
 import Footer from "../footer/Footer";
 import Header from "../header/Header";
 import Images from "../images/Images";
-import Welcome from "../wolcome/Welcome";
 import gsap from "gsap";
+import Ball from "../ball/Ball";
 function Home(): JSX.Element {
 
 
@@ -16,14 +16,17 @@ function Home(): JSX.Element {
  <Header />
  </section>
 
- <section className="images">
+ {/* <section className="images">
   <Images/>
- </section>
+ </section> */}
  <section className="name">
  <Name />
  </section>
- <section className="welcome">
- <Welcome/>
+ <section style={{height:'100vh'}} className="">
+<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam quidem nulla atque odio non distinctio sint tempora nobis dicta ducimus, facilis minus vitae veritatis eos soluta cum nisi et quis.</p>
+ </section>
+ <section className="ball">
+<Ball/>
  </section>
 <section className="footer">
         <Footer />

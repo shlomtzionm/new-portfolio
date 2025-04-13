@@ -1,26 +1,20 @@
-@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
 
 .name {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
+  height:110vh;
   width: 100vw;
-  z-index: 10;
-  height: 50vh;
   font-size: 2em;
-overflow: hidden;
+  perspective: 1000px;
   position: relative;
-  color: white;
-mix-blend-mode: difference;
-
-
-
+  margin-top: 40px;
 }
 
-
-
-@media (min-width: 700px) {
-  .name {
-    font-size: 2em;
-  }
+.nameText {
+  font-size: 100px;
+  color: black;
+  position: absolute;
+  top: 0;
 }
+
