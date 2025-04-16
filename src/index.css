@@ -23,8 +23,12 @@ code {
 body {
   background-color: #eaeaea;
   font-family: "Boldonse";
+  color: #000000;
 }
 
+html {
+  scroll-behavior: smooth;
+}
 
 
 

@@ -6,6 +6,7 @@ import Header from "../header/Header";
 import Images from "../images/Images";
 import gsap from "gsap";
 import Ball from "../ball/Ball";
+import About from "../about/About";
 function Home(): JSX.Element {
 
 
@@ -16,14 +17,15 @@ function Home(): JSX.Element {
  <Header />
  </section>
 
- {/* <section className="images">
-  <Images/>
- </section> */}
+ <section className="line">
+  <div className="line1"></div>
+  <div className="line2"></div>
+ </section>
  <section className="name">
  <Name />
  </section>
- <section style={{height:'100vh'}} className="">
-<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam quidem nulla atque odio non distinctio sint tempora nobis dicta ducimus, facilis minus vitae veritatis eos soluta cum nisi et quis.</p>
+ <section id="about" className="about">
+ <About/>
  </section>
  <section className="ball">
 <Ball/>

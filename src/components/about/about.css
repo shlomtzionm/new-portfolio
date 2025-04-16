@@ -1,0 +1,19 @@
+.about{
+    height: 50vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-weight: 100;
+    font-size: 1.1em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+p{
+    width: 50%;
+    margin-left: 10%;
+}
+
+@media (max-width : 700px) {
+    .about{
+font-size: 1.4em;    }
+}

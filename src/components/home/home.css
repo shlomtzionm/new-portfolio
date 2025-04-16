@@ -5,24 +5,42 @@
   flex-direction: column;
   padding-bottom: 10vh;
   position: relative;
- 
+}
+.line {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  z-index: -1000;
 }
 
+.line2,
+.line1 {
+  position: fixed;
+  width: 1px;
+  background: rgba(67, 66, 66, 0.183);
+  top: 0;
+  height: 100vh;
+  z-index: -100;
+}
 
+.line1 {
+  left: 33%;
+}
 
+.line2 {
+  left: 66%;
+}
 .footer {
   height: 10vh;
   width: 100vw;
   z-index: 100;
 }
 
-
-.welcome{
-height: 50vh;
-width: 100vw;
-margin-left:.5em ;
+.welcome {
+  height: 50vh;
+  width: 100vw;
+  margin-left: 0.5em;
 }
-
 
 .ball {
   width: 300px;

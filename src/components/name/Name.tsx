@@ -12,18 +12,22 @@ function Name(): JSX.Element {
     new SplitType('.nameText',{types:'chars'})
     gsap.timeline({scrollTrigger: {
       trigger: ".name",
-      start: "top 5%",
-      end: "+=400",
+      start: "top-=170 top",
+      end: "+=200",
       scrub: 1,
       pin: true,
 
     }})
-    // .to(' .nameText .char',{
-    //   ease:'power4.inOut',
-    //   rotateX:720,
-    //   stagger:.1,
-    //   duration:25,
-    // })
+    .to(' .nameText .char',{
+      ease:'power4.inOut',
+
+  stagger:.1
+    })
+
+
+
+    
+    
     
   }, []);
   

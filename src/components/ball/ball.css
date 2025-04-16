@@ -1,6 +1,11 @@
 .ball{
     perspective: 1000px;
-
+scale: 1;
 }
 
 
+@media (max-width: 700px) {
+    .ball {
+      scale: .8;
+    }
+  }

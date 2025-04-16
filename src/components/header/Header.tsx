@@ -6,19 +6,7 @@ import gsap from "gsap";
 
 
 function Header(): JSX.Element {
-  const [isMobile, SetIsMobile] = useState(checkSize);
-
-  function checkSize() {
-    return window.innerWidth < 700;
-  }
-
   useEffect(() => {
-    function handleResize() {
-      SetIsMobile(checkSize);
-    }
-
-    window.addEventListener("resize", handleResize);
-
     gsap.to(".headerC", {
       y: -100,
       ease: "power3.inOut",
@@ -32,22 +20,21 @@ function Header(): JSX.Element {
       },
     });
 
-    return () => window.removeEventListener("resize", handleResize);
   }, []);
 
   return (
     <div className="headerC">
-      {isMobile ? (
-        <FontAwesomeIcon icon={faBars} className="bars" />
-      ) : (
         <div className="list">
-          <div>shlomtzion</div>
+          <div>SH.M</div>
           <ul>
             <li>projects</li>
-            <li>about me</li>
+            <li>
+              <a href="#about">
+              about me
+              </a>
+              </li>
           </ul>
         </div>
-      )}
     </div>
   );
 }

@@ -1,21 +1,20 @@
 .headerC {
-  background-color: black;
+  background-color: rgb(26, 26, 26);
+  ;
 margin: 16px ;
 border-radius: 50px;
 color: white;
 flex-direction: column;
 display: flex;
+justify-content: center;
 position: relative;
-z-index: -1000;
-height: 10vh;
+z-index: 1;
+height: 2vh;
+font-size: 1.1em;
 }
 
 
-.bars{
-  color: white;
-  font-size: 2em;
-margin: 24px;
-}
+
 .list{
   display: flex;
 justify-content: space-between;
@@ -31,22 +30,26 @@ gap: 24px;
 li{
   list-style: none;
  
+}
 
+a{
+  text-decoration: none;
+  color: white;
 }
 
 
-
-/* Mobile-first styles (default) */
 .headerC {
-  width: fit-content;
+  width: 70vw;
   height: fit-content;
 }
 
 /* Styles for tablet and above */
-@media (min-width: 700px) {
+@media (max-width: 700px) {
   .headerC {
-    width:90vw;
-    height: 10vh;
+    width:70vw;
+    height: 8vh;
+font-size: 1.2em;
+text-align: center;
   }
 }
 
