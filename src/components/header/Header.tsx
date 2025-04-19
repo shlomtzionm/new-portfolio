@@ -1,20 +1,17 @@
-import { JSX, useEffect, useState } from "react";
+import { JSX, useEffect } from "react";
 import "./header.css";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars } from "@fortawesome/free-solid-svg-icons";
 import gsap from "gsap";
 
 
 function Header(): JSX.Element {
   useEffect(() => {
     gsap.to(".headerC", {
-      y: -100,
+      y: 100,
       ease: "power3.inOut",
-      duration: 5,
+      duration: 1,
       scrollTrigger: {
         trigger: ".headerC",
-        scrub: 2,
-        start: "top 8%",
+        start: "top top",
         end: "+=200",
    
       },

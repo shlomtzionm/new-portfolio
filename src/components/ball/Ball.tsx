@@ -26,7 +26,6 @@ function Ball() {
           start: "top bottom",
           end: "+=2000",
           scrub: true,
-          markers: true,
         },
       });
   

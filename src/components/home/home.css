@@ -5,7 +5,38 @@
   flex-direction: column;
   padding-bottom: 10vh;
   position: relative;
+  height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+
 }
+.about{
+  position: absolute;
+  top: 50%;left: 0;
+  width: 100%;
+}
+.name {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.footer {
+  height: 10vh;
+  width: 110vw;
+  z-index: 100;
+}
+
+.ball {
+  width: 300px;
+  height: 300px;
+  position: fixed;
+  bottom: 0px;
+  right: 0;
+  z-index: 10000;
+  pointer-events: none;
+}
+
 .line {
   width: 100vw;
   height: 100vh;
@@ -30,24 +61,34 @@
 .line2 {
   left: 66%;
 }
-.footer {
-  height: 10vh;
-  width: 100vw;
-  z-index: 100;
+
+
+
+.home {
+  scroll-behavior: smooth;
 }
 
-.welcome {
-  height: 50vh;
-  width: 100vw;
-  margin-left: 0.5em;
+.home::-webkit-scrollbar {
+  width: 16px;
+  z-index: 200000;
+
 }
 
-.ball {
-  width: 300px;
-  height: 300px;
-  position: fixed;
-  bottom: 0px;
-  right: 0;
-  z-index: 10000; /* Ensure the ball is on top of other content */
-  pointer-events: none; /* Allow interactions with elements underneath */
+.home::-webkit-scrollbar-track {
+  background: #c3cfb86a;
+  z-index: 200000;
+
+}
+
+.home::-webkit-scrollbar-thumb {
+  background: #1c2513;
+  border-radius: 4px;
+  z-index: 200000;
+
+}
+
+.home::-webkit-scrollbar-thumb:hover {
+  background: #000000;
+  z-index: 200000;
+
 }

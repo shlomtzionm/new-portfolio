@@ -1,5 +1,5 @@
 .about{
-    height: 50vh;
+    height: 100vh;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -11,6 +11,8 @@
 p{
     width: 50%;
     margin-left: 10%;
+    mix-blend-mode: difference;
+    color: white;
 }
 
 @media (max-width : 700px) {

@@ -3,11 +3,9 @@
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  height:80vh;
   width: 100vw;
+  /* height: 200vh; */
   font-size: 2em;
-  perspective: 1000px;
-  position: relative;
   margin-top: 40px;
 }
 
@@ -27,3 +25,4 @@
     height: 60vh;
   }
 }
+
