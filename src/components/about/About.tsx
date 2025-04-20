@@ -5,15 +5,18 @@ import me from "../../assets/images/me.jpg"
 
 function About(): JSX.Element {
     const tl = gsap.timeline()
-  tl.to(".about",{
-    y:-40,
-    ease:"power2.inOut",
-    scrollTrigger:{
-        trigger:'.about',
-        start:"top 80%",
-        end:'+=40'
-    }
-  })
+  // tl.to(".about",{
+  //   y:-40,
+
+  //   ease:"power2.inOut",
+  //   scrollTrigger:{
+  //       trigger:'.about',
+  //       start:"top 80%",
+  //       end:'+=40',
+  //       markers:true,
+
+  //   }
+  // })
     return (
     <div className="about">
       <p>

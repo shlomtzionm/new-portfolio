@@ -3,22 +3,7 @@ import "./footer.css";
 import gsap from "gsap";
 
 function Footer(): JSX.Element {
-  const skills = [
-    "react",
-    "angular",
-    "mySQL",
-    "mongoDB",
-    "typeScript",
-    "restAPI",
-    "Socket.io",
-    "OAuth",
-    "Docker",
-    "AWS",
-    "Mocha",
-    "chai",
-    "node.js",
-    "mui",
-  ];
+  const skills = ["react", "angular", "mySQL", "mongoDB", "typeScript", "restAPI", "Socket.io", "OAuth", "Docker", "AWS", "Mocha", "chai", "node.js", "mui"];
 
   const containerRef = useRef<HTMLDivElement>(null);
   const scrollerRef = useRef<HTMLDivElement>(null);
@@ -35,7 +20,7 @@ function Footer(): JSX.Element {
       repeat: -1,
       ease: "linear",
       modifiers: {
-        x: gsap.utils.unitize((x) => parseFloat(x) % totalWidth), // loop seamlessly
+        x: gsap.utils.unitize(x => parseFloat(x) % totalWidth), // loop seamlessly
       },
     });
   }, []);
@@ -44,7 +29,10 @@ function Footer(): JSX.Element {
     <div className="footer" ref={containerRef}>
       <div className="skillContainer" ref={scrollerRef}>
         {[...skills, ...skills].map((skill, i) => (
-          <span key={i}>{skill}</span>
+          <span key={i}>
+            {skill}
+            <span className="material-symbols-outlined">check_box</span>
+          </span>
         ))}
       </div>
     </div>

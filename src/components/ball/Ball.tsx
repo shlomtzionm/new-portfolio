@@ -30,19 +30,17 @@ function Ball() {
       yoyo: true,
     });
 
-    // Scroll-based horizontal glide
-    gsap.to(ball.position, {
-      x: "90", // adjust as needed for the scene
-      ease: "sine.inOut",
-      scrollTrigger: {
-        trigger: wrapperRef.current,
-        start: "top 20%",
-        end: "bottom top",
-        scrub: true,
-     markers:true
-      },
-
+    gsap.to(ball.rotation, {
+      z: "+=40",
+      y:'+=100',
+      x:"+=90",
+      duration: 30,
+      ease: "circ.inOut",
+      repeat: -1,
+      yoyo: true,
     });
+
+   
   };
 
   if (!SplineComponent) return null;

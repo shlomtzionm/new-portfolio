@@ -1,8 +1,9 @@
 .ball{
     perspective: 1000px;
 scale: 1;
-width: 50vw;
-height: 40vh;
+position: fixed;
+bottom: 0;
+right: 0;
 }
 
 
@@ -11,4 +12,5 @@ height: 40vh;
       scale: .8;
     }
   }
+
 

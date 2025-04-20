@@ -13,7 +13,7 @@ function Name(): JSX.Element {
       scrollTrigger: {
         trigger: ".name",
         start: "top-=100 top",
-        end: "+=100",
+        end: "+=70",
         scrub: 1,
         pin: true,
         pinSpacing: true,
