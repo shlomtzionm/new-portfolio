@@ -1,11 +1,16 @@
-import { JSX } from "react";
+import { JSX, useEffect } from "react";
 import "./home.css";
 import Name from "../name/Name";
 import Footer from "../footer/Footer";
 import Header from "../header/Header";
 import Ball from "../ball/Ball";
 import About from "../about/About";
+
+
 function Home(): JSX.Element {
+  
+  
+
   return (
     <div className="home">
       <section className="name">

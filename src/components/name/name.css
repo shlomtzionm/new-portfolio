@@ -4,25 +4,17 @@
   justify-content: center;
   align-items: flex-start;
   width: 100vw;
-  /* height: 200vh; */
   font-size: 2em;
   margin-top: 40px;
 }
 
 .nameText {
-  font-size: 100px;
+  font-size: 1.7em;
   color: rgb(26, 26, 26);
   position: absolute;
   top: 0;
+ 
 }
 
-@media (max-width: 700px) {
-  .nameText {
-    font-size: 1.4em;
-  }
 
-  .name{
-    height: 60vh;
-  }
-}
 

@@ -1,21 +1,41 @@
-.about{
-    height: 100vh;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    font-weight: 100;
-    font-size: 1.1em;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+.about {margin-top: 80px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-end;
+gap: 40px;
+  font-weight: 100;
+  font-size: 1.1em;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+
 }
 
-p{
-    width: 50%;
-    margin-left: 10%;
-    mix-blend-mode: difference;
-    color: white;
+p {
+  margin-top: 0;
+  align-self: flex-start;
+  width: 50%;
+  margin-left: 10%;
+  mix-blend-mode: difference;
+  color: white;
 }
 
-@media (max-width : 700px) {
-    .about{
-font-size: 1.4em;    }
+img {
+  height: 50%;
+  width: 20%;
+  mix-blend-mode: luminosity;
+  z-index: -1;
+  
+  margin: 80px 40px;
+}
+
+
+@media (max-width: 700px) {
+  .about {
+    font-size: 1.4em;
+  }
+  img{
+    width: 35%;
+margin:40px 8px ;  
+}
 }
