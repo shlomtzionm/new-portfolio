@@ -3,18 +3,30 @@
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  width: 100vw;
+  width: 100%;
   font-size: 2em;
   margin-top: 40px;
+background-color: #fff;
+height: 100vh;
+
+
 }
 
 .nameText {
   font-size: 1.7em;
   color: rgb(26, 26, 26);
-  position: absolute;
-  top: 0;
- 
+width: 100%;
+text-align: center;
+
 }
 
+@media (max-width: 700px) {
+  .name{
+width: 100%;
 
+  }
+  .nameText {
+    font-size: 1.4em;
+  }
+}
 

@@ -3,7 +3,7 @@ import "./home.css";
 import Name from "../name/Name";
 import Footer from "../footer/Footer";
 import Header from "../header/Header";
-import Ball from "../ball/Ball";
+import Ball from "../whatsapp/Whatsapp";
 import About from "../about/About";
 
 
@@ -28,11 +28,12 @@ function Home(): JSX.Element {
           <div className="line1"></div>
           <div className="line2"></div>
         </section>
+        <section className="sec" ></section>
 
         <section id="about" className="about">
           <About />
         </section>
-        <section className="ball">
+        <section className="whatsapp">
           <Ball />
         </section>
    

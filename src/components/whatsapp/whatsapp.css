@@ -1,0 +1,23 @@
+.whatsapp{
+position: fixed;
+bottom: .6em;
+left: .2em;
+z-index: 100;
+font-size: 60px;
+color: green;
+}
+
+.btn{
+ all:unset;
+
+}
+
+
+@media (max-width: 700px) {
+    .whatsapp {
+      width: 200px;
+      margin-right: -100px;
+    }
+  }
+
+

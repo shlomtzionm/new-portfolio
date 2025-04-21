@@ -2,23 +2,23 @@ import { JSX, useEffect } from "react";
 import "./name.css";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import SplitType from "split-type";
 
 gsap.registerPlugin(ScrollTrigger);
 
 function Name(): JSX.Element {
+
   useEffect(() => {
-    new SplitType(".nameText", { types: "chars" });
-    gsap.timeline({
-      scrollTrigger: {
-        trigger: ".name",
-        start: "top-=100 top",
-        end: "+=70",
-        scrub: 1,
-        pin: true,
-        pinSpacing: true,
-      },
-    });
+    // Set up the ScrollTrigger directly without a timeline
+gsap.timeline({
+  scrollTrigger:{
+    trigger: '.nameText',
+    start: "top-=150 top", // Start pinning when the top of the trigger is 50px above the top of the viewport
+    end: "+=155", // Pin for 55 pixels
+    pin: true, // Pin the element during the scroll
+    markers: true // Show markers for debugging
+
+  }
+        });
   }, []);
 
   return (

@@ -31,10 +31,10 @@ function Footer(): JSX.Element {
         {[...skills, ...skills].map((skill, i) => (
           <span key={i}>
             {skill}
-            <span className="material-symbols-outlined">check_box</span>
           </span>
         ))}
       </div>
+      
     </div>
   );
 }
