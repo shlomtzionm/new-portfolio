@@ -1,66 +1,91 @@
 .projectsC {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  margin-top: 45vh;
-  position: relative;
-  border-top: 1px solid rgba(67, 66, 66, 0.114);
-}
-.headers {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  height: 20vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 0;
-  margin-top: 16px;
-}
-
-.headers h1 {
-  font-size: 3.2em;
-}
-.headers h4 {
-  font-size: 1.7em;
-  font-weight: 100;
-}
-
-.content {
-  margin-top: 26vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-}
-
-.item {
-  border-top: 1px solid rgba(67, 66, 66, 0.114);
-  width: 100%;
-  gap: 25%;
-  display: flex;
-  justify-content: center;
-}
-
-.projectsC img {
-  width: 32%;
-
-}
-.itemHeader {
-   margin-left: 5%;
-   margin-top: 30px;
-}
-
-.itemHeader p{
-font-family: sans-serif;
-}
-
-.itemHeader div{
+    margin-top: 40vh;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    padding-top: 12vh;
+    border-top: 1px solid rgba(67, 66, 66, 0.114);
+  }
+  
+  .headers {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 48px;
+  }
+  
+  .headers h1 {
+    font-size: 3.2em;
+  }
+  .headers h4 {
+    font-size: 1.7em;
     font-weight: 100;
+  }
+  .grid-number h3 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 100;
+    margin-bottom: 0.5rem;
+  }
+  
+
+  .projectsGrid {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    margin-top: 26vh;
+    
+  }
+
+  .project-item {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 1rem;
+    align-items: center;
+    padding: 2rem 0;
+    border-top: 1px solid rgba(67, 66, 66, 0.2);
+  }
+  
+  
+  
+  .grid-number {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.2em;
+    text-align: left;
+    padding-left: 2rem;
+  }
+  
+  .grid-image img {
+    width: 95%;
+    height: 30vh;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+margin-right: 10px; 
+}
+  
+  .grid-text {
+    font-family: monospace;
+    line-height: 1.6;
+    font-size: 1em;
+    padding-left: 1rem; /* Pulls it inward */
+  }
+  
+
+
+ 
+@media (max-width: 700px) {
+    .grid-image {
+      width: 90%;
+      
+    }
+.grid-image img{
+    height: 25vh;
+    width: 100%;
+}
 }
 
-.itemText{
-    
-}

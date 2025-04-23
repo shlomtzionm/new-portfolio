@@ -36,11 +36,11 @@
   .about {
     font-size: 1.3em;
     height: 50%;
+    margin-top: 6vh;
   }
   .about img {
     width: 35%;
-    height: 150%;
-    margin: 30px 16px;
+    height: 100%;
   }
 }
 

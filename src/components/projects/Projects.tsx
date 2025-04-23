@@ -11,13 +11,23 @@ function Projects(): JSX.Element {
   const projects = [
     {
       img: imgFinanc,
-      text: "123123123213",
-      name: "something",
+      text: "A full-featured financial dashboard built with modern tools...",
+      name: "Financial Dashboard",
     },
     {
       img: imgGen,
-      text: "I’m particularly passionate about this project because it allowed me to create something entirely new...",
-      name: "AI image generator",
+      text: "An AI-powered image generator that turns text prompts into visuals...",
+      name: "AI Image Generator",
+    },
+    {
+      img: imgFinanc,
+      text: "A full-featured financial dashboard built with modern tools...",
+      name: "Financial Dashboard",
+    },
+    {
+      img: imgGen,
+      text: "An AI-powered image generator that turns text prompts into visuals...",
+      name: "AI Image Generator",
     },
   ];
 
@@ -29,23 +39,23 @@ function Projects(): JSX.Element {
         <h4 className="h4Header">some of my</h4>
         <h1 className="h1Header">projects</h1>
       </div>
-      <div className="content">
-        {projects.map((p, i) => (
-          <div className="item">
-            <div className="itemHeader">
-        <p>
+      <div className="projectsGrid">
+  {projects.map((p, i) => (
+    <div className="project-item" key={i}>
+      <div className="grid-number">
         [{i + 1}]
-          </p>
-          <div>
-          {p.name}
-          </div>
-            </div>
-
-            <img src={p.img}></img>
-            <p className="itemText">{p.text}</p>
-          </div>
-        ))}
+        <h3>{p.name}</h3>
       </div>
+      <div className="grid-image">
+        <img src={p.img} alt={`Project ${i + 1}`} />
+      </div>
+      <div className="grid-text">
+        <p>{p.text}</p>
+      </div>
+    </div>
+  ))}
+</div>
+
     </div>
   );
 }
