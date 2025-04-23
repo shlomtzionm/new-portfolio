@@ -13,14 +13,20 @@ z-index: 1000;
 }
   
   .imgContainer img {
-    height: 100px;
+    height: 80px;
     flex-shrink: 0;
     display: block;
     z-index: 10;
+    width: 350px;
+    margin: 0;
+    padding: 0;
 
   }
   
   @media (min-width: 700px) {
     .imgContainer img {
         height: 250px;
+        width: 350px;
+        margin: 0;
+        padding: 0;
       }}

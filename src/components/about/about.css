@@ -1,42 +1,47 @@
 .about {
-  margin-top: 100px;
-  height: 90vh;
+  margin-top: 20px;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  align-items: flex-end;
-  gap: 20px;
+  align-items: center;
   font-weight: 100;
   font-size: 1.1em;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-touch-action: none;
-pointer-events: none;
 }
 
-p {
+.about p {
   align-self: flex-start;
-  width: 50%;
-  margin-left: 10%;
-  mix-blend-mode: difference;
-  color: white;
+  width: 25%;
+  margin-left: 19%;
+  color: black;
+  height: 0.1em;
+  padding: 0;
+  position: relative;
+  margin-top: 10px;
 }
 
-img {
-  height: 60%;
-  width: 20%;
+.about img {
+  position: absolute;
+  top: -30%;
+  left: 48%;
+  height: 80%;
+  width: 40%;
   mix-blend-mode: luminosity;
   z-index: -1;
-  margin: 80px 40px;
-  clip-path: inset(40% 0 0 0)
+  clip-path: inset(40% 20% 0 0%); /* top right bottom left */
 }
 
 @media (max-width: 700px) {
   .about {
     font-size: 1.3em;
-  }
-  img {
-    width: 25%;
     height: 50%;
+  }
+  .about img {
+    width: 35%;
+    height: 150%;
     margin: 30px 16px;
   }
 }
+
+

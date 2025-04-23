@@ -9,6 +9,7 @@ flex-wrap: nowrap;
 overflow: hidden;
 position: fixed;
 bottom: 0;
+width: 200vw;
 }
 
 .skillContainer{
@@ -18,6 +19,3 @@ white-space: nowrap;
 will-change: transform;
 }
 
-.material-symbols-outlined{
-  margin-left: 32px;
-}

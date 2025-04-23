@@ -1,37 +1,37 @@
-import { JSX, useEffect } from "react";
-import "./header.css";
+import { useEffect } from "react";
 import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import "./header.css";
 
+gsap.registerPlugin(ScrollTrigger);
 
-function Header(): JSX.Element {
+function Header() {
   useEffect(() => {
-    gsap.to(".headerC", {
-      y: 100,
-      ease: "power3.inOut",
+    const tl = gsap.timeline();
+
+    tl.to(".headerC", {
+      y: -100,
+      ease: "none",
       duration: 1,
       scrollTrigger: {
         trigger: ".headerC",
         start: "top top",
-        end: "+=200",
-   
+        scrub: 1,
       },
-    });
-
+    })
   }, []);
 
   return (
     <div className="headerC">
-        <div className="list">
-          <div>SH.M</div>
-          <ul>
-            <li>projects</li>
-            <li>
-              <a href="#about">
-              about me
-              </a>
-              </li>
-          </ul>
-        </div>
+      <div className="list">
+        <div>SH.M</div>
+        <ul>
+          <li>projects</li>
+          <li>
+            <a href="#about">about me</a>
+          </li>
+        </ul>
+      </div>
     </div>
   );
 }

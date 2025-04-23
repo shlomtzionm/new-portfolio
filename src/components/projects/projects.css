@@ -1,0 +1,66 @@
+.projectsC {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 45vh;
+  position: relative;
+  border-top: 1px solid rgba(67, 66, 66, 0.114);
+}
+.headers {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 20vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin-top: 16px;
+}
+
+.headers h1 {
+  font-size: 3.2em;
+}
+.headers h4 {
+  font-size: 1.7em;
+  font-weight: 100;
+}
+
+.content {
+  margin-top: 26vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.item {
+  border-top: 1px solid rgba(67, 66, 66, 0.114);
+  width: 100%;
+  gap: 25%;
+  display: flex;
+  justify-content: center;
+}
+
+.projectsC img {
+  width: 32%;
+
+}
+.itemHeader {
+   margin-left: 5%;
+   margin-top: 30px;
+}
+
+.itemHeader p{
+font-family: sans-serif;
+}
+
+.itemHeader div{
+    font-weight: 100;
+}
+
+.itemText{
+    
+}

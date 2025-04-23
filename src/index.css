@@ -8,6 +8,7 @@ body {
   background-color: #eaeaea;
   font-family: "Boldonse";
   color: #000000;
+
 }
 
 * {
@@ -18,6 +19,7 @@ body {
 
 html {
   scroll-behavior: smooth;
+
 }
 
 html::-webkit-scrollbar {
