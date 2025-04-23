@@ -43,7 +43,9 @@ function Projects(): JSX.Element {
   {projects.map((p, i) => (
     <div className="project-item" key={i}>
       <div className="grid-number">
-        [{i + 1}]
+<p>
+[0{i + 1}]
+  </p>     
         <h3>{p.name}</h3>
       </div>
       <div className="grid-image">

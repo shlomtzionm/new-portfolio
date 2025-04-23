@@ -21,16 +21,22 @@
   }
   
   .headers h1 {
-    font-size: 3.2em;
+    font-size: 4.7em;
+    letter-spacing: 4px;
   }
   .headers h4 {
-    font-size: 1.7em;
+    font-size: 1.9em;
     font-weight: 100;
   }
-  .grid-number h3 {
+  .grid-number h3{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 100;
     margin-bottom: 0.5rem;
+    font-size: 50px;
+  }
+
+  .grid-number{
+    margin-bottom: 8em;
   }
   
 
@@ -44,14 +50,12 @@
 
   .project-item {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 25% 50% 25%;
     column-gap: 1rem;
     align-items: center;
     padding: 2rem 0;
     border-top: 1px solid rgba(67, 66, 66, 0.2);
   }
-  
-  
   
   .grid-number {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -62,17 +66,18 @@
   
   .grid-image img {
     width: 95%;
-    height: 30vh;
+    height: 50vh;
+    margin-top: 50px;
     border-radius: 12px;
     box-shadow: 0 8px 24px rgba(0,0,0,0.1);
-margin-right: 10px; 
 }
   
   .grid-text {
-    font-family: monospace;
+width: 50%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
-    font-size: 1em;
-    padding-left: 1rem; /* Pulls it inward */
+    font-size: 1.5em;
+    padding-left: .5rem; /* Pulls it inward */
   }
   
 
@@ -86,6 +91,15 @@ margin-right: 10px;
 .grid-image img{
     height: 25vh;
     width: 100%;
+}
+.grid-number h3{
+    width: 100%;
+    overflow: hidden;
+font-size: 1.7em;
+}
+.grid-number{
+    padding-left: .6rem;
+
 }
 }
 

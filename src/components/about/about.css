@@ -19,6 +19,7 @@
   padding: 0;
   position: relative;
   margin-top: 10px;
+
 }
 
 .about img {
@@ -36,11 +37,17 @@
   .about {
     font-size: 1.3em;
     height: 50%;
-    margin-top: 6vh;
+    margin-top: 8vh;
+    
   }
   .about img {
     width: 35%;
     height: 100%;
+    top: 40%;left: 50%;
+    transform: translateX(-42%);
+  }
+  .about p{
+    width: 65%;
   }
 }
 
